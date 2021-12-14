@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<div><strong>Title</strong></div>
+<div><%= @blog.title %></div>
+
+<div><strong>Body</strong></div>
+<div><%= raw(@blog.body) %></div>
+
+<div><strong>Author</strong></div>
+<div><%= @blog.author %></div>
+
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %>
